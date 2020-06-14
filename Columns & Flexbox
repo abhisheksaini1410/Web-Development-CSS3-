@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Columns</title>
+	<style>
+		article{
+			column-count:3;
+			column-gap:40px;
+			/*
+			column-rule-style:solid;
+			column-rule-width: 1px;
+			column-rule-color: coral;
+			*/
+			column-rule: 1px solid coral;
+		}
+
+		article h1{
+			column-span:all;
+		}
+
+		.textbox1{
+			border: 2px solid;
+			padding:20px;
+			width:300px;
+			overflow:auto;
+			resize:both;
+		}
+
+		.textbox2{
+			margin:20px;
+			padding:10px;
+			width:300px;
+			height:100px;
+			border:1px solid black;
+			outline: 1px solid red;
+			outline-offset:10px;
+		}
+
+		.flex-container{
+			display:flex;
+			/*
+			flex-direction:column-reverse;
+			*/
+			justify-content: space-around;
+			width:400px;
+			height:250px;
+			background-color:#000000;
+		}
+
+		.flex-item{
+			background-color:lightblue;
+			width:100px;
+			height:100px;
+			margin:10px;
+		}
+
+		.first{
+			order:-1;
+		}
+	</style>
+</head>
+<body>
+	<article>
+		<h1>Article Title</h1>
+		 Your love is golden because it always leads me to the fun side of life. I have no regrets about meeting you. It has been a life-changing moment. My days are far better. You are the woman of my dreams, who keeps me calm even in the lonely hours. I can’t love you less, dear.
+		  I feel your presence even when you are not here with me. Remembering how cute you look when you smile sends butterfly down my tummy. Your face is the biggest motivation I need to keep pushing on with life.
+		   I want to go on this journey of life with you, and I want to stand with you while we fight the storms that you will be facing. Am I asking for too much? I know that my life didn’t start with you, but I want to end it with you.
+	</article>
+
+	<br>
+
+	<div class="textbox1">Try and resize this element</div>
+	<div class="textbox2">This element has a 10px outline</div>
+
+	<div class="flex-container">
+	  <div class="flex-item">flex item 1</div>
+	  <div class="flex-item first">flex item 2</div>
+	  <div class="flex-item">flex item 3</div>
+	</div>
+</body>
+</html>
